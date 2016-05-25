@@ -1,0 +1,79 @@
+
+@aColor: green;
+@newColor: #ff169a;
+
+
+
+            #circle {
+                 width: 50px;
+                 height: 50px;
+                 border-radius: 50%; /* To create circle */
+                 background-color:  @aColor;
+                 margin: 10px,
+              }
+
+              .square {
+                 width: 100px;
+                 height: 100px;
+                 background-color: @aColor;
+                 margin: 10px;
+              }
+
+              .square2 {
+                width: 75px;
+                height: 75px;
+                background-color: @newColor;
+                margin: 10px;
+              }
+
+
+
+
+
+
+
+            .base {
+                 border-radius: 50%; /* To create circle */
+                 background-color:  @aColor;
+                 margin: 10px;
+              }
+
+           .baseSmall {
+                .base;
+                width:  50px;
+                height: 50px;
+            }
+
+             .baseBig {
+                .base;
+                width:  150px;
+                height: 150px;
+               background-color:  @aColor * 15;
+            }
+
+
+
+            @buttonBackground: #ff169a;
+            @buttonColor: #0e0bff;
+            @buttonPadding: 10px;
+
+            .button{
+              background: @buttonBackground;
+              color: @buttonColor;
+              padding: @buttonPadding;
+              display: inline-block;
+              border-radius: 4px;
+            }
+
+            .jumbo-button{
+              .button;
+              padding: @buttonPadding + 30;
+            }
+
+            .light-button{
+              .button;
+              background: @buttonBackground * 3;
+            }
+
+
+    
